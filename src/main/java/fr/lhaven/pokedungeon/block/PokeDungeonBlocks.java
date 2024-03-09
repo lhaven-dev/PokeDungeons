@@ -16,14 +16,12 @@ import net.minecraftforge.registries.RegistryObject;
 
 import java.util.function.Supplier;
 
-import static net.minecraft.world.item.Items.registerBlock;
-
 public class PokeDungeonBlocks {
     public static final DeferredRegister<Block> BLOCKS =
             DeferredRegister.create(ForgeRegistries.BLOCKS, PokeDungeon.MODID);
 
     public static final RegistryObject<Block> POKELOOT_POKEBALL_BLOCK = registerBlock("pokeloot",
-            () -> new LootBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK).sound(SoundType.EMPTY).strength(3.0F, 3.0F)));
+            () -> new LootBlock(BlockBehaviour.Properties.copy(Blocks.BEDROCK).sound(SoundType.EMPTY)));
 
     private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block) {
         RegistryObject<T> toReturn = BLOCKS.register(name, block);

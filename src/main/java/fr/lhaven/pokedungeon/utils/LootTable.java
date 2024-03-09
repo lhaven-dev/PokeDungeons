@@ -1,15 +1,10 @@
 package fr.lhaven.pokedungeon.utils;
 
 import com.cobblemon.mod.common.CobblemonItems;
-import com.cobblemon.mod.common.api.tags.CobblemonItemTags;
-import com.cobblemon.mod.common.item.group.CobblemonItemGroups;
 import net.minecraft.world.item.ItemStack;
 
 import java.util.ArrayList;
-import java.util.Collection;
 import java.util.List;
-
-import static org.openjdk.nashorn.internal.objects.Global.print;
 
 public class LootTable {
 
