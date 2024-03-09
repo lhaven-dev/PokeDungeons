@@ -23,7 +23,7 @@ public class PokeDungeonBlocks {
             DeferredRegister.create(ForgeRegistries.BLOCKS, PokeDungeon.MODID);
 
     public static final RegistryObject<Block> POKELOOT_POKEBALL_BLOCK = registerBlock("pokeloot",
-            () -> new LootBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK).sound(SoundType.AMETHYST)));
+            () -> new LootBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK).sound(SoundType.EMPTY).strength(3.0F, 3.0F)));
 
     private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block) {
         RegistryObject<T> toReturn = BLOCKS.register(name, block);
