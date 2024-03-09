@@ -1,0 +1,20 @@
+{
+
+  "structures": [
+    {
+      "structure": "pokedungeon:dungeon",
+      "weight": 1
+    }
+  ],
+  "placement": {
+
+    "type": "minecraft:random_spread",
+
+
+    "salt": 1694767080,
+
+
+    "spacing": 8,
+    "separation": 4
+  }
+}
