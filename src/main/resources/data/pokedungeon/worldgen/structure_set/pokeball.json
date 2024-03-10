@@ -1,0 +1,20 @@
+{
+
+  "structures": [
+    {
+      "structure": "pokedungeon:pokeball",
+      "weight": 1
+    }
+  ],
+  "placement": {
+
+    "type": "minecraft:random_spread",
+
+
+    "salt": 1694767080,
+
+
+    "spacing": 16,
+    "separation": 4
+  }
+}

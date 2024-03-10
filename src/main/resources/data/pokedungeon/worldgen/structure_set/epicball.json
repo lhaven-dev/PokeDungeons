@@ -2,7 +2,7 @@
 
   "structures": [
     {
-      "structure": "pokedungeon:dungeon",
+      "structure": "pokedungeon:epicball",
       "weight": 1
     }
   ],
@@ -11,10 +11,10 @@
     "type": "minecraft:random_spread",
 
 
-    "salt": 1694767080,
+    "salt": 169484580,
 
 
-    "spacing": 8,
+    "spacing": 48,
     "separation": 4
   }
 }

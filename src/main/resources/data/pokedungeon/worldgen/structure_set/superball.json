@@ -1,0 +1,20 @@
+{
+
+  "structures": [
+    {
+      "structure": "pokedungeon:superball",
+      "weight": 1
+    }
+  ],
+  "placement": {
+
+    "type": "minecraft:random_spread",
+
+
+    "salt": 4767016980,
+
+
+    "spacing": 32,
+    "separation": 4
+  }
+}

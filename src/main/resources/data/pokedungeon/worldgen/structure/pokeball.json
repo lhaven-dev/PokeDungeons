@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:jigsaw",
+  "start_pool": "pokedungeon:lootball/pokeball_pool",
+  "max_distance_from_center": 80,
+  "size": 2,
+  "biomes": "#pokedungeon:has_structure/loot_ball_biomes",
+  "step": "surface_structures",
+  "terrain_adaptation": "beard_thin",
+  "start_height": {
+    "absolute": 0,
+    "relative": "top"
+  },
+  "project_start_to_heightmap": "WORLD_SURFACE",
+  "use_expansion_hack": false,
+  "spawn_overrides": {
+
+}
+}
