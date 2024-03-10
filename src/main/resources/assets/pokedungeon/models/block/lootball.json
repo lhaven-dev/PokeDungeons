@@ -1,0 +1,21 @@
+{
+  "credit": "Made with Blockbench",
+  "textures": {
+    "0": "pokedungeon:block/lootball",
+    "particle": "pokedungeon:block/lootball"
+  },
+  "elements": [
+    {
+      "from": [6, 0, 6],
+      "to": [11, 5, 11],
+      "faces": {
+        "north": {"uv": [0, 0, 5, 5], "texture": "#0"},
+        "east": {"uv": [0, 5, 5, 10], "texture": "#0"},
+        "south": {"uv": [5, 0, 10, 5], "texture": "#0"},
+        "west": {"uv": [5, 5, 10, 10], "texture": "#0"},
+        "up": {"uv": [5, 15, 0, 10], "texture": "#0"},
+        "down": {"uv": [15, 0, 10, 5], "texture": "#0"}
+      }
+    }
+  ]
+}

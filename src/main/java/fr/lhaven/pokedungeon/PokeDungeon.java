@@ -43,6 +43,7 @@ public class PokeDungeon {
         if(event.getTabKey() == PokeDungeonCreativeModTabs.POKEDUNGEON_TAB.getKey()) {
             event.accept(PokeDungeonItems.POKEKEY_ITEM.get());
             event.accept(PokeDungeonBlocks.POKELOOT_POKEBALL_BLOCK.get());
+            event.accept(PokeDungeonBlocks.LOOT_BALL.get());
         }
     }
     private void commonSetup(final FMLCommonSetupEvent event) {

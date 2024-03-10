@@ -2,6 +2,7 @@ package fr.lhaven.pokedungeon.block;
 
 import fr.lhaven.pokedungeon.PokeDungeon;
 import fr.lhaven.pokedungeon.block.custom.LootBlock;
+import fr.lhaven.pokedungeon.block.entity.LootBall;
 import fr.lhaven.pokedungeon.item.PokeDungeonItems;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
@@ -31,6 +32,9 @@ public class PokeDungeonBlocks {
     private static <T extends Block> RegistryObject<Item> registerBlockItem(String name, RegistryObject<T> block) {
         return PokeDungeonItems.ITEMS.register(name, () -> new BlockItem(block.get(), new Item.Properties()));
     }
+
+    public static final RegistryObject<Block> LOOT_BALL = registerBlock("lootball",
+            () -> new LootBall(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK).noOcclusion()));
 
     public static void register(IEventBus eventBus) {
         BLOCKS.register(eventBus);
