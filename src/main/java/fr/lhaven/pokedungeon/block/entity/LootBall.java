@@ -4,14 +4,12 @@ import com.cobblemon.mod.common.CobblemonSounds;
 import fr.lhaven.pokedungeon.item.PokeDungeonItems;
 import fr.lhaven.pokedungeon.utils.LootTable;
 import net.minecraft.core.BlockPos;
-import net.minecraft.core.Direction;
 import net.minecraft.core.particles.ParticleTypes;
 import net.minecraft.network.chat.Component;
 import net.minecraft.world.InteractionHand;
 import net.minecraft.world.InteractionResult;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.ItemStack;
-import net.minecraft.world.item.context.BlockPlaceContext;
 import net.minecraft.world.level.BlockGetter;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.block.*;
@@ -33,8 +31,6 @@ public static final DirectionProperty FACING = BlockStateProperties.HORIZONTAL_F
 
 public LootBall(Properties pProperties) {
         super(pProperties);
-        pProperties.lightLevel((pState) -> 2);
-
 }
     @Override
     public VoxelShape getShape(BlockState pState, BlockGetter pLevel, BlockPos pPos, CollisionContext pContext) {
@@ -64,7 +60,7 @@ public LootBall(Properties pProperties) {
         pPlayer.getInventory().add(HeldItemStack);
         pPlayer.getInventory().add(EvolutionStack);
         pPlayer.getInventory().add(PokeballStack);
-    };
+    }
 
         return InteractionResult.SUCCESS;
     }
@@ -73,4 +69,4 @@ public LootBall(Properties pProperties) {
     public BlockEntity newBlockEntity(BlockPos pPos, BlockState pState) {
         return null;
     }
-};
+}
