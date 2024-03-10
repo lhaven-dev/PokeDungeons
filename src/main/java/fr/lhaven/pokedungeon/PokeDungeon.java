@@ -43,7 +43,10 @@ public class PokeDungeon {
         if(event.getTabKey() == PokeDungeonCreativeModTabs.POKEDUNGEON_TAB.getKey()) {
             event.accept(PokeDungeonItems.POKEKEY_ITEM.get());
             event.accept(PokeDungeonBlocks.POKELOOT_POKEBALL_BLOCK.get());
-            event.accept(PokeDungeonBlocks.LOOT_BALL.get());
+            event.accept(PokeDungeonBlocks.LOOT_BALL_COMMUN.get());
+            event.accept(PokeDungeonBlocks.LOOT_BALL_RARE.get());
+            event.accept(PokeDungeonBlocks.LOOT_BALL_EPIC.get());
+            event.accept(PokeDungeonBlocks.LOOT_BALL_LEGENDARY.get());
         }
     }
     private void commonSetup(final FMLCommonSetupEvent event) {

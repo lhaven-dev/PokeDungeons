@@ -2,7 +2,10 @@ package fr.lhaven.pokedungeon.block;
 
 import fr.lhaven.pokedungeon.PokeDungeon;
 import fr.lhaven.pokedungeon.block.custom.LootBlock;
-import fr.lhaven.pokedungeon.block.entity.LootBall;
+import fr.lhaven.pokedungeon.block.entity.LootBallCommon;
+import fr.lhaven.pokedungeon.block.entity.LootBallEpic;
+import fr.lhaven.pokedungeon.block.entity.LootBallLegendary;
+import fr.lhaven.pokedungeon.block.entity.LootBallRare;
 import fr.lhaven.pokedungeon.item.PokeDungeonItems;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
@@ -32,9 +35,21 @@ public class PokeDungeonBlocks {
     private static <T extends Block> RegistryObject<Item> registerBlockItem(String name, RegistryObject<T> block) {
         return PokeDungeonItems.ITEMS.register(name, () -> new BlockItem(block.get(), new Item.Properties()));
     }
+//----------------------------------------------------- LOOT BALL COMMUN
+    public static final RegistryObject<Block> LOOT_BALL_COMMUN = registerBlock("lootballcommun",
+            () -> new LootBallCommon(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK).noOcclusion()));
 
-    public static final RegistryObject<Block> LOOT_BALL = registerBlock("lootball",
-            () -> new LootBall(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK).noOcclusion()));
+//----------------------------------------------------- LOOT BALL RARE
+    public static final RegistryObject<Block> LOOT_BALL_RARE= registerBlock("lootballrare",
+            () -> new LootBallRare(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK).noOcclusion()));
+
+    //----------------------------------------------------- LOOT BALL EPIC
+    public static final RegistryObject<Block> LOOT_BALL_EPIC= registerBlock("lootballepic",
+            () -> new LootBallEpic(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK).noOcclusion()));
+
+    //----------------------------------------------------- LOOT BALL LEGENDARY
+    public static final RegistryObject<Block> LOOT_BALL_LEGENDARY= registerBlock("lootballlegendary",
+            () -> new LootBallLegendary(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK).noOcclusion()));
 
     public static void register(IEventBus eventBus) {
         BLOCKS.register(eventBus);
