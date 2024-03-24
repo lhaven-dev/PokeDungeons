@@ -5,6 +5,8 @@ import fr.lhaven.pokedungeon.block.PokeDungeonBlocks;
 import fr.lhaven.pokedungeon.item.PokeDungeonCreativeModTabs;
 import fr.lhaven.pokedungeon.item.PokeDungeonItems;
 import net.minecraft.client.Minecraft;
+import net.minecraft.client.renderer.entity.layers.RenderLayer;
+import net.minecraft.world.level.block.RenderShape;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.event.BuildCreativeModeTabContentsEvent;
