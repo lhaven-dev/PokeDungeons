@@ -1,5 +1,19 @@
 {
   "variants": {
-    "": { "model": "pokedungeon:block/lootballrare" }
+    "facing=north": {
+      "model": "pokedungeon:block/lootballrare"
+    },
+    "facing=east": {
+      "model": "pokedungeon:block/lootballrare",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "pokedungeon:block/lootballrare",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "pokedungeon:block/lootballrare",
+      "y": 270
+    }
   }
 }

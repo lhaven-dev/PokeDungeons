@@ -8,6 +8,7 @@ public class LootBlock extends Block {
     public LootBlock(Properties pProperties ){
         super(pProperties);
 
+
     }
 }
 

@@ -1,7 +1,6 @@
 package fr.lhaven.pokedungeon.utils;
 
 import com.cobblemon.mod.common.CobblemonItems;
-import fr.lhaven.pokedungeon.PokeDungeon;
 import fr.lhaven.pokedungeon.item.PokeDungeonItems;
 import net.minecraft.world.item.ItemStack;
 
@@ -9,7 +8,6 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class LootTable {
-
     public  static final List<ItemStack> RARE = new ArrayList<>();
     public  static final List<ItemStack> COMMON = new ArrayList<>();
     public  static final List<ItemStack> EPIC = new ArrayList<>();
@@ -152,19 +150,12 @@ public class LootTable {
     }
 
     public static ItemStack GetKey() {
-
             return new ItemStack(PokeDungeonItems.POKEKEY_ITEM.get());
-
     }
-
         private static ItemStack randomable(List<ItemStack> collection) {
-
-
       int size = collection.size();
         int index = (int) (Math.random() * size);
         ItemStack itemStack = collection.get(index);
-
-
         return itemStack;
     }
 }

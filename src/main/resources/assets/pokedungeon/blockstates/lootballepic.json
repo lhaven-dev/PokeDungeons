@@ -1,5 +1,19 @@
 {
   "variants": {
-    "": { "model": "pokedungeon:block/lootballepic" }
+    "facing=north": {
+      "model": "pokedungeon:block/lootballepic"
+    },
+    "facing=east": {
+      "model": "pokedungeon:block/lootballepic",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "pokedungeon:block/lootballepic",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "pokedungeon:block/lootballepic",
+      "y": 270
+    }
   }
 }
